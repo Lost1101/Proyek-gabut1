@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4ef2c70460.js" cross origin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200&display=swap" 
+    rel="stylesheet"/>
+    <title>Anda gabut?</title>
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+        }
+        div{
+            display: block;
+            text-align: center;
+        }
+        input{
+            text-align: center;
+            font-size: 50px;
+        }
+        img{
+            max-width: 400px; cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p style="color: red;"><b>(Try clicking Vayne xD)</b></p>
+        <p><b>Total of clicking :</b></p>
+        <input type = "text" value = "1" id = "output" disabled="disabled" style="border: none;background: transparent; "/>
+        <p>Clue : He hates being touched, something will be happen every +50 click 😳</p>
+
+        <div id="box" style="border: solid 4px; background-color: rgb(54, 69, 102); width: 1000px; display: block; margin: auto;">
+        <div>
+            <img src="1.png" alt="" onclick="add1(); add2()" id="image">
+        </div>
+        <div style="background-color: rgb(164, 164, 221);  padding: 10px; margin: 20px; border: solid; border-radius:20px;">
+            <p id="teks" style="font-size: 20px;"><b>All hail to the elves great sacred tree, Yggdrasil, hope we always blessed.<br>
+                My name is Vayne de Elvendia, first crown prince from Elvendia Empire, nice to meet you. <br><br>
+                </i></b></p> <i class="fa-solid fa-caret-down"></i>
+        </div>
+        </div>
+
+        <br>
+    </div>
+    
+</body>
+</html>
+
+<script>var add1 = function() {  
+    document.getElementById("output").value = parseInt(document.getElementById("output").value,10) + 1;
+};
+    var add2 = function(){
+        var x = document.getElementById("output");
+        if (x.value == "2"){
+            document.getElementById("teks").innerHTML="<b>...Pardon? ...How can I help you?</b>";
+            } else if (x.value == "50"){
+                document.getElementById("image").src="2.png";
+                document.getElementById("teks").innerHTML="<b>I'm sorry sir/lady, but I think this is quite impolite</b>";
+            } else if (x.value == "100"){
+                document.getElementById("image").src="3.png";
+                document.getElementById("teks").innerHTML="<b>Sir/lady, do you know how to be ethical?</b>";
+            } else if (x.value == "150"){
+                document.getElementById("image").src="4.png";
+                document.getElementById("teks").innerHTML="<b>In Elvendia, it is mandatory to be polite to anyone, aren't you taught what is called ethical culture?</b>";
+                document.getElementById("box").style.backgroundColor = "rgb(37, 48, 70)";
+            } else if (x.value == "200"){
+                document.getElementById("image").src="5.png";
+                document.getElementById("teks").innerHTML="<b>Stop touching me or I will dishonorably kick you out of here!!</b>";
+                document.getElementById("box").style.backgroundColor = "rgb(20, 26, 39)";
+            } else if (x.value == "250"){
+                document.getElementById("image").src="6.png";
+                document.getElementById("teks").innerHTML="<b>are you looking to die?</b>";
+                document.getElementById("teks").style.fontSize = "30px";
+                document.getElementById("box").style.backgroundColor = "rgb(0, 0, 0)";
+            } else if (x.value == "300"){
+                document.getElementById("image").src="7.png";
+                document.getElementById("teks").style.fontSize = "50px";
+                document.getElementById("teks").innerHTML="<b>Banh kok kamuh gabut?</b>";
+                document.getElementById("box").style.backgroundColor = rgb(54, 69, 102);
+            }
+    }
+  </script>
