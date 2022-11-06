@@ -38,8 +38,8 @@
             <img src="1.png" alt="" onclick="add1(); add2()" id="image">
         </div>
         <div style="background-color: rgb(164, 164, 221);  padding: 10px; margin: 20px; border: solid; border-radius:20px;">
-            <p id="teks" style="font-size: 20px;"><b>All hail to the elves great sacred tree, Yggdrasil, hope we always blessed.<br>
-                My name is Vayne de Elvendia, first crown prince from Elvendia Empire, nice to meet you. <br><br>
+            <p id="teks" style="font-size: 20px;"><b>All hail to the our great sacred tree, Yggdrasil, hope we always be blessed by the light of the tree.<br>
+                My name is Vayne de Elvendia, the first crown prince from Elvendia Empire, nice to meet you. <br><br>
                 </i></b></p> <i class="fa-solid fa-caret-down"></i>
         </div>
         </div>
@@ -56,7 +56,7 @@
     var add2 = function(){
         var x = document.getElementById("output");
         if (x.value == "2"){
-            document.getElementById("teks").innerHTML="<b>...Pardon? ...How can I help you?</b>";
+            document.getElementById("teks").innerHTML="<b>...Yes? ...How can I help you?</b>";
             } else if (x.value == "50"){
                 document.getElementById("image").src="2.png";
                 document.getElementById("teks").innerHTML="<b>I'm sorry sir/lady, but I think this is quite impolite</b>";
@@ -73,7 +73,7 @@
                 document.getElementById("box").style.backgroundColor = "rgb(20, 26, 39)";
             } else if (x.value == "250"){
                 document.getElementById("image").src="6.png";
-                document.getElementById("teks").innerHTML="<b>are you looking to die?</b>";
+                document.getElementById("teks").innerHTML="<b>Are you want to die?</b>";
                 document.getElementById("teks").style.fontSize = "30px";
                 document.getElementById("box").style.backgroundColor = "rgb(0, 0, 0)";
             } else if (x.value == "300"){
